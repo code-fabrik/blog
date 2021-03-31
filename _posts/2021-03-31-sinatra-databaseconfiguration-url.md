@@ -23,6 +23,6 @@ NameError: uninitialized constant ActiveRecord::DatabaseConfigurations::Connecti
 /app/vendor/bundle/ruby/2.7.0/gems/activerecord-6.1.3.1/lib/active_record/database_configurations/connection_url_resolver.rb:47:in `uri_parser'
 ```
 
-You can fix the error by requiring the `URI` class before loading `ActiveRecord`, for example in your `app.rb` file. This makes sure that the `URI` class can be found:
+You can fix the error by requiring the `URI` class before loading `ActiveRecord`, for example in your `Rakefile`. This makes sure that the `URI` class can be found:
 
 ![](/assets/activerecord-require-uri.png)
